@@ -1,0 +1,6 @@
+security:
+    login:
+        username: 'Nume de utilizator'
+        password: Parola
+        remember_me: 'Ține-mă minte'
+        submit: Autentificare

@@ -1,0 +1,8 @@
+security:
+    login:
+        email: Email address
+        username: Username
+        password: Password
+        remember_me: 'Remember me'
+        submit: 'Log in'
+        sign_in: Please sign in

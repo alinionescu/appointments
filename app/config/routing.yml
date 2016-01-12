@@ -1,6 +1,19 @@
 app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/
+    defaults: { _locale: %locale% }
+    requirements:
+        _locale: %locales%
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /{_locale}/
+    defaults: { _locale: %locale% }
+    requirements:
+        _locale: %locales%
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    prefix: /{_locale}/
+    defaults: { _locale: %locale% }
+    requirements:
+        _locale: %locales%
