@@ -5,8 +5,9 @@ security:
         FOS\UserBundle\Model\UserInterface: sha512
 
     role_hierarchy:
-        ROLE_ADMIN:       ROLE_USER
-        ROLE_SUPER_ADMIN: ROLE_ADMIN
+        ROLE_USER:        ROLE_USER
+        ROLE_ADMIN:       ROLE_ADMIN
+        ROLE_SUPER_ADMIN: ROLE_SUPER_ADMIN
 
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
@@ -17,14 +18,15 @@ security:
         main:
             pattern:  ^/
             form_login:
-                check_path: /login_check
-                login_path: /login
-                failure_path: /login
+                check_path: fos_user_security_check
+                login_path: /%locale%/login
+                failure_path: /%locale%/login
                 provider: fos_userbundle
                 csrf_token_generator: security.csrf.token_manager
+                default_target_path: app_homepage
             logout:
-                path: /logout
-                target: /login
+                path: fos_user_security_logout
+                target: /%locale%/login
             anonymous: true
             # activate different ways to authenticate
 
