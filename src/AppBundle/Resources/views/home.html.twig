@@ -1,7 +1,15 @@
 {% extends 'base.html.twig' %}
 
+{% block navbar %}
+    {{ parent() }}
+{% endblock %}
 {% block body %}
-<div class="container">
-   Logout
-</div> <!-- /container -->
+    <div class="container">
+        <span class="label label-default">Default</span>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Basic panel example
+            </div>
+        </div>
+    </div>
 {% endblock %}

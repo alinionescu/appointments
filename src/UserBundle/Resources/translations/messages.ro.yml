@@ -1,8 +1,0 @@
-security:
-    login:
-        email: Adresa de e-mail
-        username: 'Nume de utilizator'
-        password: Parola
-        remember_me: 'Ține-mă minte'
-        submit: Autentificare
-        sign_in: Te rog logheaza-te

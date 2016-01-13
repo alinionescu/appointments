@@ -1,0 +1,11 @@
+security:
+    login:
+        login: 'Login'
+        logout: 'Login Out'
+        email: 'Email address'
+        username: 'Username'
+        password: 'Password'
+        remember_me: 'Remember me'
+        submit: 'Log in'
+        sign_in: 'Please sign in'
+        wellcome: 'Wellcome, '
